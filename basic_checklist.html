@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Information Checklist</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .form-check-label {
+            color: #333;
+        }
+
+        .form-check-input {
+            margin-right: 10px;
+        }
+
+        .form-control {
+            margin-bottom: 10px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Car Inspection</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#basic-checklist">Basic Checklist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#test-drive">Test Drive</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="mt-5 text-center">Car Information Checklist</h1>
+
+        <form class="mt-4">
+            <!-- Year -->
+            <div class="mb-3">
+                <label for="year" class="form-label">Year</label>
+                <input type="text" class="form-control" id="year" placeholder="Enter the year of the car" />
+            </div>
+
+            <!-- Make -->
+            <div class="mb-3">
+                <label for="make" class="form-label">Make</label>
+                <input type="text" class="form-control" id="make" placeholder="Enter the make of the car" />
+            </div>
+
+            <!-- Model -->
+            <div class="mb-3">
+                <label for="model" class="form-label">Model</label>
+                <input type="text" class="form-control" id="model" placeholder="Enter the model of the car" />
+            </div>
+
+            <!-- Asking Price/Phone# -->
+            <div class="mb-3">
+                <label for="price" class="form-label">Asking Price/Phone#</label>
+                <input type="text" class="form-control" id="price"
+                    placeholder="Enter the asking price or phone number" />
+            </div>
+
+            <!-- Trade-in Value -->
+            <div class="mb-3">
+                <label for="trade-in" class="form-label">Trade-in Value</label>
+                <input type="text" class="form-control" id="trade-in" placeholder="Enter the trade-in value" />
+            </div>
+
+            <!-- Additional Checklist Items - Body Condition -->
+            <h2>Body Condition</h2>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="scratches" />
+                <label class="form-check-label" for="scratches">Scratches</label>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="dents" />
+                <label class="form-check-label" for="dents">Dents</label>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="windshield" />
+                <label class="form-check-label" for="windshield">Windshield (chips or cracks?)</label>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="headlights" />
+                <label class="form-check-label" for="headlights">Headlights (foggy?)</label>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="inspection-sticker" />
+                <label class="form-check-label" for="inspection-sticker">Inspection Sticker Current?</label>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="rusty-brake-rotors" />
+                <label class="form-check-label" for="rusty-brake-rotors">Rusty Brake Rotors?</label>
+            </div>
+
+            <!-- Additional Checklist Items - Wheels -->
+            <h2>Wheels</h2>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="tire-tread" />
+                <label class="form-check-label" for="tire-tread">Tire Tread</label>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="all-tires-same" />
+                <label class="form-check-label" for="all-tires-same">All 4 tires/wheels the same?</label>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="wheel-damage" />
+                <label class="form-check-label" for="wheel-damage">Wheel damage?</label>
+            </div>
+
+            <!-- Additional Checklist Items - Interior -->
+            <h2>Interior</h2>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="rips-on-seats" />
+                <label class="form-check-label" for="rips-on-seats">Rips on seats</label>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="car-options" />
+                <label class="form-check-label" for="car-options">Car Options (Navi, sunroof, etc)</label>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="headliner" />
+                <label class="form-check-label" for="headliner">Headliner (saggy?)</label>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="transmission" />
+                <label class="form-check-label" for="transmission">Automatic/Manual</label>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="steering-wheel" />
+                <label class="form-check-label" for="steering-wheel">Steering wheel (worn?)</label>
+            </div>
+
+            <!-- Additional Checklist Items - Under the Car -->
+            <h2>Under the Car</h2>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="engine-leaks" />
+                <label class="form-check-label" for="engine-leaks">Leaks (near engine and rear diff)</label>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="rust" />
+                <label class="form-check-label" for="rust">Rust (exhaust, frame, body, etc)</label>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="suspension" />
+                <label class="form-check-label" for="suspension">Suspension (tie rods, ball joints, shocks, axle, etc)</label>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="frame-damage" />
+                <label class="form-check-label" for="frame-damage">Frame Damage (from collision)</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Include Bootstrap JavaScript and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
