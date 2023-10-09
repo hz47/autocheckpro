@@ -56,10 +56,12 @@
         .sticky-top {
             position: sticky;
             top: 0;
-            z-index: 1000; /* Adjust the z-index as needed */
+            z-index: 1000;
+            /* Adjust the z-index as needed */
         }
+
         .form-check-input {
-        margin-right: 0px !important;
+            margin-right: 0px !important;
         }
     </style>
 </head>
@@ -68,7 +70,8 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">Car Inspection</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -77,7 +80,8 @@
                         <a class="nav-link" href="https://milos.oroz.space/autocheckpro/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://milos.oroz.space/autocheckpro/basic_checklist.html">Basic Checklist</a>
+                        <a class="nav-link" href="https://milos.oroz.space/autocheckpro/basic_checklist.html">Basic
+                            Checklist</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://milos.oroz.space/autocheckpro/test_drive.html">Test Drive</a>
@@ -86,7 +90,7 @@
             </div>
         </div>
     </nav>
-    
+
     <div class="container">
         <h1 class="mt-5 text-center">Car Information Checklist</h1>
 
@@ -94,32 +98,32 @@
             <!-- Year -->
             <div class="mb-3">
                 <label for="year" class="form-label">Year</label>
-                <input type="text" class="form-control" id="year" placeholder="Enter the year of the car" />
+                <input type="text" class="form-control  id=" year" placeholder="Enter the year of the car" />
             </div>
 
             <!-- Make -->
             <div class="mb-3">
                 <label for="make" class="form-label">Make</label>
-                <input type="text" class="form-control" id="make" placeholder="Enter the make of the car" />
+                <input type="text" class="form-control " id="make" placeholder="Enter the make of the car" />
             </div>
 
             <!-- Model -->
             <div class="mb-3">
                 <label for="model" class="form-label">Model</label>
-                <input type="text" class="form-control" id="model" placeholder="Enter the model of the car" />
+                <input type="text" class="form-control " id="model" placeholder="Enter the model of the car" />
             </div>
 
             <!-- Asking Price/Phone# -->
             <div class="mb-3">
                 <label for="price" class="form-label">Asking Price/Phone#</label>
-                <input type="text" class="form-control" id="price"
+                <input type="text" class="form-control " id="price"
                     placeholder="Enter the asking price or phone number" />
             </div>
 
             <!-- Trade-in Value -->
             <div class="mb-3">
                 <label for="trade-in" class="form-label">Trade-in Value</label>
-                <input type="text" class="form-control" id="trade-in" placeholder="Enter the trade-in value" />
+                <input type="text" class="form-control " id="trade-in" placeholder="Enter the trade-in value" />
             </div>
 
             <!-- Additional Checklist Items - Body Condition -->
@@ -127,31 +131,42 @@
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="scratches" />
                 <label class="form-check-label" for="scratches">Scratches</label>
+                <input type="text" class="form-control input-field" id="scratches-details"
+                    placeholder="Enter details" />
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="dents" />
                 <label class="form-check-label" for="dents">Dents</label>
+                <input type="text" class="form-control input-field" id="dents-details" placeholder="Enter details" />
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="windshield" />
                 <label class="form-check-label" for="windshield">Windshield (chips or cracks?)</label>
+                <input type="text" class="form-control input-field" id="windshield-details"
+                    placeholder="Enter details" />
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="headlights" />
                 <label class="form-check-label" for="headlights">Headlights (foggy?)</label>
+                <input type="text" class="form-control input-field" id="headlights-details"
+                    placeholder="Enter details" />
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="inspection-sticker" />
                 <label class="form-check-label" for="inspection-sticker">Inspection Sticker Current?</label>
+                <input type="text" class="form-control input-field" id="inspection-sticker-details"
+                    placeholder="Enter details" />
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="rusty-brake-rotors" />
                 <label class="form-check-label" for="rusty-brake-rotors">Rusty Brake Rotors?</label>
+                <input type="text" class="form-control input-field" id="rusty-brake-rotors-details"
+                    placeholder="Enter details" />
             </div>
 
             <!-- Additional Checklist Items - Wheels -->
@@ -159,16 +174,22 @@
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="tire-tread" />
                 <label class="form-check-label" for="tire-tread">Tire Tread</label>
+                <input type="text" class="form-control input-field" id="tire-tread-details"
+                    placeholder="Enter details" />
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="all-tires-same" />
                 <label class="form-check-label" for="all-tires-same">All 4 tires/wheels the same?</label>
+                <input type="text" class="form-control input-field" id="all-tires-same-details"
+                    placeholder="Enter details" />
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="wheel-damage" />
                 <label class="form-check-label" for="wheel-damage">Wheel damage?</label>
+                <input type="text" class="form-control input-field" id="wheel-damage-details"
+                    placeholder="Enter details" />
             </div>
 
             <!-- Additional Checklist Items - Interior -->
@@ -176,61 +197,75 @@
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="rips-on-seats" />
                 <label class="form-check-label" for="rips-on-seats">Rips on seats</label>
+                <input type="text" class="form-control input-field" id="rips-on-seats-details"
+                    placeholder="Enter details" />
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="car-options" />
                 <label class="form-check-label" for="car-options">Car Options (Navi, sunroof, etc)</label>
+                <input type="text" class="form-control input-field" id="car-options-details"
+                    placeholder="Enter details" />
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="headliner" />
                 <label class="form-check-label" for="headliner">Headliner (saggy?)</label>
+                <input type="text" class="form-control input-field" id="headliner-details"
+                    placeholder="Enter details" />
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="transmission" />
                 <label class="form-check-label" for="transmission">Automatic/Manual</label>
+                <input type="text" class="form-control input-field" id="transmission-details"
+                    placeholder="Enter details" />
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="steering-wheel" />
                 <label class="form-check-label" for="steering-wheel">Steering wheel (worn?)</label>
+                <input type="text" class="form-control input-field" id="steering-wheel-details"
+                    placeholder="Enter details" />
             </div>
+
 
             <!-- Additional Checklist Items - Under the Car -->
             <h2>Under the Car</h2>
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="engine-leaks" />
                 <label class="form-check-label" for="engine-leaks">Leaks (near engine and rear diff)</label>
-                <input type="text" class="form-control" id="engine-leaks-input" placeholder="Enter details"/>
+                <input type="text" class="form-control input-field" id="engine-leaks-input"
+                    placeholder="Enter details" />
 
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="rust" />
                 <label class="form-check-label" for="rust">Rust (exhaust, frame, body, etc)</label>
-                <input type="text" class="form-control" id="rust-input" placeholder="Enter details"/>
+                <input type="text" class="form-control input-field" id="rust-input" placeholder="Enter details" />
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="suspension" />
-                <label class="form-check-label" for="suspension">Suspension (tie rods, ball joints, shocks, axle, etc)</label>
-                <input type="text" class="form-control" id="suspension-input" placeholder="Enter details"/>
+                <label class="form-check-label" for="suspension">Suspension (tie rods, ball joints, shocks, axle,
+                    etc)</label>
+                <input type="text" class="form-control input-field" id="suspension-input" placeholder="Enter details" />
 
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="frame-damage" />
                 <label class="form-check-label" for="frame-damage">Frame Damage (from collision)</label>
-                <input type="text" class="form-control" id="rame-damage-input" placeholder="Enter details"/>
+                <input type="text" class="form-control input-field" id="rame-damage-input"
+                    placeholder="Enter details" />
             </div>
-       
+
             <div id="review-section">
                 <h3>Review:</h3>
                 <p id="checked-count">0/18</p>
 
-                <p id="review-text"></p>
+                <div class="review-text"></div>
             </div>
 
             <button type="submit" class="btn btn-primary">Submit</button>
@@ -244,64 +279,74 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             // Function to update the checked count
             function updateCheckedCount() {
                 // Get all the checkboxes with the class "form-check-input"
                 const checkboxes = $('.form-check-input');
-            
+
                 // Initialize a variable to count the checked checkboxes
                 let checkedCount = 0;
-            
+
                 // Loop through the checkboxes and count the checked ones
-                checkboxes.each(function() {
+                checkboxes.each(function () {
                     if ($(this).prop('checked')) {
                         checkedCount++;
                     }
                 });
-            
+
                 // Update the text of the "checked-count" element
                 const checkedCountElement = $('#checked-count');
                 checkedCountElement.text(checkedCount + '/18');
             }
-            
+
             // Attach an event listener to each checkbox to update the count when checked/unchecked
             $('.form-check-input').change(updateCheckedCount);
-            
+
             // Call the function initially to set the count to 0/24
             updateCheckedCount();
         });
-        </script>
-    
-  
-    <script>
- $(document).ready(function() {
-    // Attach an event listener to all checkboxes with the class "checkbox"
-    $('.checkbox').change(function() {
-        // Find the corresponding input field and review text element
-        const $inputField = $(this).siblings('.input-field');
-        const $reviewText = $(this).closest('.form-check').find('.review-text');
+    </script>
 
-        if ($(this).is(':checked')) {
-            // Checkbox is checked, add text to review section
-            const inputValue = $inputField.val();
-            $reviewText.text(`${$(this).attr('id')} Details: ${inputValue}`);
-        } else {
-            // Checkbox is unchecked, clear the review text
-            $reviewText.text('');
-        }
-    });
-});
-</script>
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+    <script>
+        $(document).ready(function () {
+            // Attach a change event listener to each checkbox and input field
+            $('input[type="checkbox"]').change(updateReviewText);
+            $('.input-field').on('input', updateReviewText);
+
+            function updateReviewText() {
+                // Initialize an empty string for the review text
+                let textToAdd = '';
+
+                // Loop through the checkboxes and input fields
+                $('input[type="checkbox"]').each(function (index) {
+                    const inputField = $('.input-field').eq(index);
+
+                    if ($(this).is(':checked')) {
+                        // Checkbox is checked, add text to review section with enumeration
+                        const checkboxLabel = $(this).next('label').text();
+                        const inputValue = inputField.val();
+
+                        if ($.trim(inputValue) !== '') {
+                            // Add enumeration and line break using <br> tag
+                            textToAdd += `${index + 1}. ${checkboxLabel} Details: ${inputValue}<br>`;
+                        }
+                    }
+                });
+
+                // Update the review text element with HTML
+                $('.review-text').html(textToAdd);
+            }
+        });
+    </script>
+
+
+
+
+
+
+
 </body>
 
 </html>
