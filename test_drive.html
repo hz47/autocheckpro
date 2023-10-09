@@ -767,11 +767,43 @@
             </div>
 
             <h3>Scan Engine after Test Drive</h3>
+            
+            <p id="checked-count">0/92</p>
 
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
-
+    <script>
+        // Function to update the checked count
+        function updateCheckedCount() {
+            // Get all the checkboxes with the class "form-check-input"
+            const checkboxes = document.querySelectorAll('.form-check-input');
+    
+            // Initialize a variable to count the checked checkboxes
+            let checkedCount = 0;
+    
+            // Loop through the checkboxes and count the checked ones
+            checkboxes.forEach(function (checkbox) {
+                if (checkbox.checked) {
+                    checkedCount++;
+                }
+            });
+    
+            // Update the text of the "checked-count" element
+            const checkedCountElement = document.getElementById('checked-count');
+            checkedCountElement.textContent = checkedCount + '/92';
+        }
+    
+        // Attach an event listener to each checkbox to update the count when checked/unchecked
+        const checkboxes = document.querySelectorAll('.form-check-input');
+        checkboxes.forEach(function (checkbox) {
+            checkbox.addEventListener('change', updateCheckedCount);
+        });
+    
+        // Call the function initially to set the count to 0/24
+        updateCheckedCount();
+    </script>
+    
     <!-- Include Bootstrap JavaScript and jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>

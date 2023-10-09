@@ -7,6 +7,8 @@
     <title>Car Information Checklist</title>
     <!-- Include Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <style>
         body {
             padding: 20px;
@@ -201,31 +203,105 @@
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="engine-leaks" />
                 <label class="form-check-label" for="engine-leaks">Leaks (near engine and rear diff)</label>
+                <input type="text" class="form-control" id="engine-leaks-input" placeholder="Enter details"/>
+
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="rust" />
                 <label class="form-check-label" for="rust">Rust (exhaust, frame, body, etc)</label>
+                <input type="text" class="form-control" id="rust-input" placeholder="Enter details"/>
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="suspension" />
                 <label class="form-check-label" for="suspension">Suspension (tie rods, ball joints, shocks, axle, etc)</label>
+                <input type="text" class="form-control" id="suspension-input" placeholder="Enter details"/>
+
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="frame-damage" />
                 <label class="form-check-label" for="frame-damage">Frame Damage (from collision)</label>
+                <input type="text" class="form-control" id="rame-damage-input" placeholder="Enter details"/>
             </div>
+       
+            <div id="review-section">
+                <h3>Review:</h3>
+                <p id="checked-count">0/18</p>
+
+                <p id="review-text"></p>
+            </div>
+
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
 
     <!-- Include Bootstrap JavaScript and jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
+    <script>
+        $(document).ready(function() {
+            // Function to update the checked count
+            function updateCheckedCount() {
+                // Get all the checkboxes with the class "form-check-input"
+                const checkboxes = $('.form-check-input');
+            
+                // Initialize a variable to count the checked checkboxes
+                let checkedCount = 0;
+            
+                // Loop through the checkboxes and count the checked ones
+                checkboxes.each(function() {
+                    if ($(this).prop('checked')) {
+                        checkedCount++;
+                    }
+                });
+            
+                // Update the text of the "checked-count" element
+                const checkedCountElement = $('#checked-count');
+                checkedCountElement.text(checkedCount + '/18');
+            }
+            
+            // Attach an event listener to each checkbox to update the count when checked/unchecked
+            $('.form-check-input').change(updateCheckedCount);
+            
+            // Call the function initially to set the count to 0/24
+            updateCheckedCount();
+        });
+        </script>
+    
+  
+    <script>
+ $(document).ready(function() {
+    // Attach an event listener to all checkboxes with the class "checkbox"
+    $('.checkbox').change(function() {
+        // Find the corresponding input field and review text element
+        const $inputField = $(this).siblings('.input-field');
+        const $reviewText = $(this).closest('.form-check').find('.review-text');
+
+        if ($(this).is(':checked')) {
+            // Checkbox is checked, add text to review section
+            const inputValue = $inputField.val();
+            $reviewText.text(`${$(this).attr('id')} Details: ${inputValue}`);
+        } else {
+            // Checkbox is unchecked, clear the review text
+            $reviewText.text('');
+        }
+    });
+});
+</script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
 </body>
 
 </html>
