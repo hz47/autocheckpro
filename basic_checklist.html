@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Car Information Checklist</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js"></script>
+    <script src="https://unpkg.com/html2canvas@1.0.0-rc.1/dist/html2canvas.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
 
     <!-- Include Bootstrap CSS -->
@@ -13,7 +16,7 @@
 
     <!-- Custom CSS Styles -->
     <link rel="stylesheet" href="styles.css">
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 
 </head>
@@ -28,25 +31,25 @@
             <!-- Year -->
             <div class="mb-3">
                 <label for="year" class="form-label">Year</label>
-                <input type="text" class="form-control  id=" year" placeholder="Enter the year of the car" />
+                <input type="text" class="form-control input-field-info"  id="year" placeholder="Enter the year of the car" />
             </div>
 
             <!-- Make -->
             <div class="mb-3">
                 <label for="make" class="form-label">Make</label>
-                <input type="text" class="form-control " id="make" placeholder="Enter the make of the car" />
+                <input type="text" class="form-control input-field-info" id="make" placeholder="Enter the make of the car" />
             </div>
 
             <!-- Model -->
             <div class="mb-3">
                 <label for="model" class="form-label">Model</label>
-                <input type="text" class="form-control " id="model" placeholder="Enter the model of the car" />
+                <input type="text" class="form-control input-field-info" id="model" placeholder="Enter the model of the car" />
             </div>
 
             <!-- Asking Price/Phone# -->
             <div class="mb-3">
                 <label for="price" class="form-label">Asking Price/Phone#</label>
-                <input type="text" class="form-control " id="price"
+                <input type="text" class="form-control input-field-info" id="price"
                     placeholder="Enter the asking price or phone number" />
             </div>
 
@@ -191,9 +194,10 @@
                     placeholder="Enter details" />
             </div>
 
-            <div id="review-section">
+            <div class="review-section">
                 <h3>Checklist information review:</h3>
-                <div>How many items you checked: <span id="checked-count">0/18</span></div>
+                <div class="car-info"></div>
+                <div>How many items did you check: <span id="checked-count">0/18</span></div>
 
                 <p>Comments you added:</p>
                 <div class="review-text"></div>
@@ -202,7 +206,7 @@
 
 
         </form>
-        <div class="form-check" style="text-align: left; padding-top: 20px;">
+        <div class="form-check" style="text-align: left; padding: 20pt;">
             <button type="button" class="btn btn-primary" id="exportPdfButton">Export to PDF</button>
         </div>
     </section>
@@ -244,6 +248,7 @@
             // Attach a change event listener to each checkbox and input field
             $('input[type="checkbox"]').change(updateReviewText);
             $('.input-field').on('input', updateReviewText);
+            $('.input-field-info').on('input', updateReviewText);
             // Add a click event listener to the "Export to PDF" button
             // Add a click event listener to the "Export to PDF" button
             $('#exportPdfButton').click(function () {
@@ -258,7 +263,7 @@
             function updateReviewText() {
                 // Initialize an empty string for the review text
                 let textToAdd = '';
-
+                let carInfo='';
                 // Loop through the checkboxes and input fields
                 $('input[type="checkbox"]').each(function (index) {
                     const inputField = $('.input-field').eq(index);
@@ -269,11 +274,35 @@
                         const inputValue = inputField.val();
 
                         if ($.trim(inputValue) !== '') {
-                            // Add enumeration and line break using <br> tag
-                            textToAdd += `${index + 1}. ${checkboxLabel} Details: ${inputValue}<br>`;
+                            // Add enumeration and line break 
+                            textToAdd += `<div style="display: flex; align-items: center;"><div>${index + 1}.</div><div>${checkboxLabel}: ${inputValue}</div></div>`;
                         }
                     }
+    
                 });
+                const yearInputValue = $('#year').val();
+                const makeInputValue = $('#make').val();
+                const modelInputValue = $('#model').val();
+                const priceInputValue = $('#price').val();
+                const tradeInputValue = $('#trade-in').val();
+
+                if ($.trim(yearInputValue) !== '') {
+                    carInfo += `<div>Year: ${yearInputValue}</div>`;
+                }
+
+                if ($.trim(makeInputValue) !== '') {
+                    carInfo += `<div>Make: ${makeInputValue}</div>`;
+                }
+                if ($.trim(modelInputValue) !== '') {
+                    carInfo += `<div>Model: ${modelInputValue}</div>`;
+                }
+                if ($.trim(priceInputValue) !== '') {
+                    carInfo += `<div>Price: ${priceInputValue}</div>`;
+                }
+                if ($.trim(tradeInputValue) !== '') {
+                    carInfo += `<div>Trade-In: ${tradeInputValue}</div>`;
+                }
+                $('.car-info').html(carInfo );
 
                 // Update the review text element with HTML
                 $('.review-text').html(textToAdd);
@@ -283,14 +312,18 @@
                 // Create a new jsPDF instance
                 window.jsPDF = window.jspdf.jsPDF;
 
-                const pdf = new jsPDF();
-
+                const pdf = new jsPDF(
+                    {
+                        'orientation': 'p',
+                        'unit': 'pt',
+                        'format': 'letter',
+                        'putOnlyUsedFonts': true,
+                    }
+                );
 
                 // Get the review text content
-                const reviewText = $('.review-text').html();
+                const reviewText = $('.review-section').html();
 
-                // Add the review text to the PDF document
-                pdf.text(reviewText, 10, 10);
                 // Get the current date in a formatted string
                 const now = new Date();
                 const formattedDate = now.toLocaleDateString().replaceAll('/', '-');
@@ -299,7 +332,15 @@
                 const filename = `review-${formattedDate}.pdf`;
 
                 // Save the PDF with the updated filename
-                pdf.save(filename);
+                pdf.html(reviewText, {
+                    width: 580,
+                    windowWidth: 580,
+                    margin: 15,
+                    callback: function () {
+                        console.log(reviewText); // to debug
+                        pdf.save(filename);
+                    }
+                });
             }
             // Helper function to check if at least one comment is added
             function isAtLeastOneCommentAdded() {
