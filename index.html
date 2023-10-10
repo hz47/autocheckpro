@@ -10,96 +10,19 @@
     
         <!-- Custom CSS Styles -->
         <link rel="stylesheet" href="styles.css">
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         
         <!-- Font Awesome Icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-        <style>
-            body {
-                padding: 20px;
-                background-color: #f8f9fa;
-            }
-    
-            .container {
-                padding: 20px;
-                border-radius: 5px;
-            }
-    
-            h1 {
-                color: #007bff;
-            }
-    
-            h2 {
-                color: #333;
-                margin-top: 20px;
-            }
-    
-            .form-check-label {
-                color: #333;
-            }
-    
-            .form-check-input {
-                margin-right: 10px;
-            }
-    
-            .form-control {
-                margin-bottom: 10px;
-            }
-    
-            .btn-primary {
-                background-color: #007bff;
-                border-color: #007bff;
-            }
-    
-            .btn-primary:hover {
-                background-color: #0056b3;
-                border-color: #0056b3;
-            }
-    
-            /* Add custom CSS for the sticky navbar */
-            .sticky-top {
-                position: sticky;
-                top: 0;
-                z-index: 1000; /* Adjust the z-index as needed */
-            }
-        </style>
     </head>
     <body>
     
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="https://milos.oroz.space/autocheckpro/">01 Car Hub</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://milos.oroz.space/autocheckpro/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://milos.oroz.space/autocheckpro/basic_checklist.html">Simple Checklist</a>
-                    </li>
-                    <li class="nav-item">
-                         <a class="nav-link" href="https://milos.oroz.space/autocheckpro/test_drive.html">Test Drive Checklist</a>
-                    </li>
+    <div id="navbar"></div>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Maintenance Checklist</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Diagnostic Tools</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Car Error Repair</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
     
     <!-- Hero Section -->
     <section class="hero">
@@ -201,7 +124,11 @@
     </div>
 </footer>
 
-
+<script>
+    $(document).ready(function () {
+        $("#navbar").load("navi.html");
+    });
+</script>
     
     <!-- Add Bootstrap JS CDN (optional) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
