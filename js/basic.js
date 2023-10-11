@@ -1,6 +1,4 @@
-$(document).ready(function () {
-  $("#navbar").load("navi.html");
-});
+
 
 $(document).ready(function () {
   // Function to update the checked count
