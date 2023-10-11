@@ -8,4 +8,6 @@ function updateHrefAttributes() {
     return baseUrl + $(this).data("path");
   });
 }
+updateHrefAttributes();
+
 });
