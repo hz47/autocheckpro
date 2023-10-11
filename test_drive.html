@@ -719,13 +719,21 @@
         </div>
 
         <h3>Scan Engine after Test Drive</h3>
+        <div class="review-section">
+            <h3>Checklist information review:</h3>
+            <div class="car-info"></div>
+            <div>How many items did you check: <span id="checked-count">0/92</span></div>
 
-        <p id="checked-count">0/92</p>
+            <p>Comments you added:</p>
+            <div class="review-text"></div>
+        </div>
 
-        <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+        <div class="" style="text-align: left; padding-top: 20pt;padding-bottom: 20pt;">
+            <button type="button" class="btn btn-primary" id="exportPdfButton">Export to PDF</button>
+        </div>
     </div>
-    <script>
+    <!-- <script>
         // Function to update the checked count
         function updateCheckedCount() {
             // Get all the checkboxes with the class "form-check-input"
@@ -759,7 +767,9 @@
         $(document).ready(function () {
             $("#navbar").load("navi.html");
         });
-    </script>
+    </script> -->
+
+    <script src="drive.js"></script>
 
     <!-- Include Bootstrap JavaScript and jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
