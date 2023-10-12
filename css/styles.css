@@ -20,3 +20,12 @@ body {
     font-family: Quicksand,sans-serif;
 
 }
+
+.bigger-text {
+    font-size: 4.5rem; /* Adjust the size as needed */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+.bigger-text span {
+    display: block; /* Each word on a new line */
+}
