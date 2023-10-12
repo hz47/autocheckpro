@@ -17,17 +17,20 @@
 }
 
 body {
-    font-family: Quicksand,sans-serif;
+    font-family: Quicksand, sans-serif;
 
 }
 
 .bigger-text {
-    font-size: 4.5rem; /* Adjust the size as needed */
-    white-space: nowrap; /* Prevent wrapping */
+    font-size: 4.5rem;
+    /* Adjust the size as needed */
+    white-space: nowrap;
+    /* Prevent wrapping */
 }
 
 .bigger-text span {
-    display: block; /* Each word on a new line */
+    display: block;
+    /* Each word on a new line */
 }
 
 /* media queries */
@@ -35,38 +38,47 @@ body {
 .hero-section {
     text-align: left !important;
 }
-.featured-section{
+
+.featured-section {
     text-align: left !important;
 }
 
 
-.img-right-corner{
+.img-right-corner {
     border-radius: 0px 50px 0px 0px;
 }
+
 .text-left-corner {
     border-radius: 0px 0px 0px 50px;
 }
+
 /* responsive, form small screens, use 13px font size */
 @media (max-width: 992px) {
     .bigger-text {
         font-size: 3rem;
         white-space: nowrap;
     }
+
     .hero-section {
         text-align: center !important;
     }
-    .featured-section{
+
+    .featured-section {
         text-align: center !important;
         margin-top: 17pt;
     }
-    .img-right-corner{
+
+    .img-right-corner {
         border-radius: 0px 0px 0px 00px;
     }
+
     .text-left-corner {
         border-radius: 0px 0px 0px 00px;
     }
+
     .mt-5 {
-        margin-top: 0rem!important;
+        margin-top: 0rem !important;
     }
 }
+
 /* end media queries */
