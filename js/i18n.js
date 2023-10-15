@@ -68,9 +68,9 @@ $(function () {
       if (err) return console.error(err);
 
       // define the formatter function
-      i18next.services.formatter.add('LLLL', (value, lng, options) => {
-        return moment(value).locale(lng).format('LLLL');
-      });
+      // i18next.services.formatter.add('LLLL', (value, lng, options) => {
+      //   return moment(value).locale(lng).format('LLLL');
+      // });
 
       // for options see
       // https://github.com/i18next/jquery-i18next#initialize-the-plugin
