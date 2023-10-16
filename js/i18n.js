@@ -25,6 +25,8 @@ $(function () {
     .init({
       debug: true,
       fallbackLng: 'en',
+      supportedLngs: ['en', 'de'],
+      nonExplicitSupportedLngs: true,
       backend: {
         loadPath: '/locales/{{lng}}/{{ns}}.json'
       }
@@ -79,7 +81,7 @@ $(function () {
       // fill language switcher
       // Object.keys(lngs).map((lng) => {
       //   const opt = new Option(lngs[lng].nativeName, lng);
-      //   if (lng === i18next.resolvedLanguage) {
+      //   if (lng === i  ) {
       //     opt.setAttribute("selected", "selected");
       //   }
       //   $('#languageSwitcher').append(opt);
