@@ -25,8 +25,7 @@ $(function () {
     .init({
       debug: true,
       fallbackLng: 'en',
-      supportedLngs: ['en', 'de'],
-      nonExplicitSupportedLngs: true,
+      
       backend: {
         loadPath: '/locales/{{lng}}/{{ns}}.json'
       }
@@ -104,6 +103,7 @@ $(function () {
 
       // Handle language switch on click
       var languageSwitch = $('#languageSwitch');
+      
       languageSwitch.on('click', function () {
         // Determine the current language
         var currentLanguage = i18next.resolvedLanguage.split('-')[0];
@@ -111,7 +111,7 @@ $(function () {
         // Toggle between English (en) and German (de)
         var newLanguage = currentLanguage === 'en' ? 'de' : 'en';
 
-        console.log(currentLanguage, newLanguage, languageSwitch.val())
+        console.log('<<<', currentLanguage, newLanguage, languageSwitch.text())
         // Update the language switcher
         i18next.changeLanguage(newLanguage, () => {
           languageSwitch.text(currentLanguage)

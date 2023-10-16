@@ -8,6 +8,12 @@
     "btn": {
       "basic": "Basis-Checkliste",
       "drive": "Testfahrten-Checkliste"
+    },
+    "about": {
+      "hi": "Hallo!",
+      "p1": "Ich habe diese Checklisten zusammengestellt, um den Autokauf viel einfacher zu gestalten.",
+      "p2": "Sie haben bei mir wunderbar funktioniert, und ich hoffe, sie erweisen sich auch für dich als nützlich!",
+      "p3": "Irgendwelche Rückmeldungen, die für andere nützlich sein könnten? Teile sie gerne mit mir hier. 🚗😄"
     }
   },
   "nav": {

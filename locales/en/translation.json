@@ -8,7 +8,13 @@
     "btn": {
       "basic": "Basic Checklist",
       "drive": "Test Drive Checklist"
-    }
+    },
+  "about" : {
+    "hi": "Hey there!",
+    "p1": "I've put together these checklists to make car buying a whole lot easier.",
+    "p2": "They've worked like a charm for me, and I hope they do the same for you!",
+    "p3": "Any feedback that could be useful for others? Feel free to share it with me here. 🚗😄"
+   }
   },
   "nav": {
     "home": "HOME",
