@@ -106,7 +106,7 @@ $(function () {
       var languageSwitch = $('#languageSwitch');
       languageSwitch.on('click', function () {
         // Determine the current language
-        var currentLanguage = i18next.resolvedLanguage;
+        var currentLanguage = i18next.resolvedLanguage.split('-')[0];
 
         // Toggle between English (en) and German (de)
         var newLanguage = currentLanguage === 'en' ? 'de' : 'en';
