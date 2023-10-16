@@ -8,13 +8,45 @@
     "btn": {
       "basic": "Basis-Checkliste",
       "drive": "Testfahrten-Checkliste"
-    },
-    "about": {
-      "hi": "Hallo!",
-      "p1": "Ich habe diese Checklisten zusammengestellt, um den Autokauf viel einfacher zu gestalten.",
-      "p2": "Sie haben bei mir wunderbar funktioniert, und ich hoffe, sie erweisen sich auch für dich als nützlich!",
-      "p3": "Irgendwelche Rückmeldungen, die für andere nützlich sein könnten? Teile sie gerne mit mir hier. 🚗😄"
     }
+  },
+  "about": {
+    "hi": "Hallo!",
+    "p1": "Ich habe diese Checklisten zusammengestellt, um den Autokauf viel einfacher zu gestalten.",
+    "p2": "Sie haben bei mir wunderbar funktioniert, und ich hoffe, sie erweisen sich auch für dich als nützlich!",
+    "p3": "Irgendwelche Rückmeldungen, die für andere nützlich sein könnten? Teile sie gerne mit mir hier. 🚗😄"
+  },
+  "basic": {
+    "year": "Jahr",
+    "make": "Hersteller",
+    "model": "Modell",
+    "price": "Verkaufspreis/Telefon",
+    "value": "Inzahlungnahme-Wert",
+    "h2body-condition": "Karosseriezustand",
+    "scratches": "Kratzer",
+    "dents": "Dellen",
+    "windshield": "Frontscheibe (Steinschläge oder Risse?)",
+    "headlights": "Scheinwerfer (verdunkelt?)",
+    "inspection-sticker": "Aktuelle Inspektionsplakette?",
+    "rusty-brake-rotors": "Rostige Bremsrotoren?",
+    "h2wheels": "Räder",
+    "tire-tread": "Reifenprofil",
+    "all-tires-same": "Sind alle 4 Reifen/Räder gleich?",
+    "wheel-damage": "Radschäden?",
+    "h2interior": "Innenraum",
+    "rips-on-seats": "Risse auf den Sitzen",
+    "car-options": "Fahrzeugoptionen (Navigation, Schiebedach, etc.)",
+    "headliner": "Dachhimmel (durchhängend?)",
+    "transmission": "Automatik/Manuell",
+    "steering-wheel": "Lenkrad (abgenutzt?)",
+    "h2under-car": "Unter dem Fahrzeug",
+    "leaks": "Lecks (in der Nähe des Motors und des Hinterachsgetriebes)",
+    "rust": "Rost (Auspuff, Rahmen, Karosserie, etc.)",
+    "suspension": "Federung (Spurstangen, Kugelgelenke, Stoßdämpfer, Achsen, etc.)",
+    "frame-damage": "Rahmenschäden (durch Kollision)",
+    "h3review": "Überprüfung der Checkliste:",
+    "check": "Wie viele Punkte hast du überprüft:",
+    "comments": "Hinzugefügte Kommentare:"
   },
   "nav": {
     "home": "HOME",

@@ -8,13 +8,45 @@
     "btn": {
       "basic": "Basic Checklist",
       "drive": "Test Drive Checklist"
-    },
-  "about" : {
+    }
+  },
+  "about": {
     "hi": "Hey there!",
     "p1": "I've put together these checklists to make car buying a whole lot easier.",
     "p2": "They've worked like a charm for me, and I hope they do the same for you!",
     "p3": "Any feedback that could be useful for others? Feel free to share it with me here. 🚗😄"
-   }
+  },
+  "basic": {
+    "year": "Year",
+    "make": "Make",
+    "model": "Model",
+    "price": "Asking Price/Phone",
+    "value": "Trade-in Value",
+    "h2body-condition": "Body Condition",
+    "scratches": "Scratches",
+    "dents": "Dents",
+    "windshield": "Windshield (chips or cracks?)",
+    "headlights": "Headlights (foggy?)",
+    "inspection-sticker": "Inspection Sticker Current?",
+    "rusty-brake-rotors": "Rusty Brake Rotors?",
+    "h2wheels": "Wheels",
+    "tire-tread": "Tire Tread",
+    "all-tires-same": "All 4 tires/wheels the same?",
+    "wheel-damage": "Wheel damage?",
+    "h2interior": "Interior",
+    "rips-on-seats": "Rips on seats",
+    "car-options": "Car Options (Navi, sunroof, etc)",
+    "headliner": "Headliner (saggy?)",
+    "transmission": "Automatic/Manual",
+    "steering-wheel": "Steering wheel (worn?)",
+    "h2under-car": "Under the Car",
+    "leaks": "Leaks (near engine and rear diff)",
+    "rust": "Rust (exhaust, frame, body, etc)",
+    "suspension": "Suspension (tie rods, ball joints, shocks, axle, etc)",
+    "frame-damage": "Frame Damage (from collision)",
+    "h3review": "Checklist information review:",
+    "check": "How many items did you check:",
+    "comments": "Comments you added:"
   },
   "nav": {
     "home": "HOME",
@@ -24,4 +56,3 @@
     "resource": "RESOURCE"
   }
 }
-

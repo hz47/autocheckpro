@@ -18,19 +18,26 @@
     gtag('config', 'G-HVQPSX94JX');
     </script>
     <title>About us</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js"></script>
-    <script src="https://unpkg.com/html2canvas@1.0.0-rc.1/dist/html2canvas.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
 
     <!-- Include Bootstrap CSS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- Custom CSS Styles -->
   <link rel="stylesheet" href="/css/styles.css">
+  <script>
+    $(document).ready(function () {
+        $("#navbar").load("/pages/navi.html");
+
+    });
+</script>
+    <!-- translations -->
+    <script src="https://cdn.jsdelivr.net/npm/i18next@23.2.1/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@2.2.1/i18nextHttpBackend.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@7.1.0/i18nextBrowserLanguageDetector.min.js"></script>
 
 </head>
 
@@ -47,20 +54,16 @@
         </div>
     </div>
 
-    <script>
-        $(document).ready(function () {
-            $("#navbar").load("/pages/navi.html");
-        });
-    </script>
+ 
 
 
     <!-- Include Bootstrap JavaScript and jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
 
+    <script src="/js/i18n.js"></script>
 
 </body>
 

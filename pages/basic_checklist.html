@@ -29,6 +29,19 @@
   <!-- Custom CSS Styles -->
    <link rel="stylesheet" href="/css/styles.css">
 
+   <script>
+    $(document).ready(function () {
+        $("#navbar").load("/pages/navi.html");
+
+    });
+</script>
+    <!-- translations -->
+    <script src="https://cdn.jsdelivr.net/npm/i18next@23.2.1/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@2.2.1/i18nextHttpBackend.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@7.1.0/i18nextBrowserLanguageDetector.min.js"></script>
+
+
 </head>
 
 <body>
@@ -40,144 +53,144 @@
         <form class="mt-4">
             <!-- Year -->
             <div class="mb-3">
-                <label for="year" class="form-label">Year</label>
+                <label for="year" class="form-label" data-i18n="basic.year">Year</label>
                 <input type="text" class="form-control input-field-info"  id="year" placeholder="Enter the year of the car" />
             </div>
 
             <!-- Make -->
             <div class="mb-3">
-                <label for="make" class="form-label">Make</label>
+                <label for="make" class="form-label" data-i18n="basic.make">Make</label>
                 <input type="text" class="form-control input-field-info" id="make" placeholder="Enter the make of the car" />
             </div>
 
             <!-- Model -->
             <div class="mb-3">
-                <label for="model" class="form-label">Model</label>
+                <label for="model" class="form-label" data-i18n="basic.model">Model</label>
                 <input type="text" class="form-control input-field-info" id="model" placeholder="Enter the model of the car" />
             </div>
 
             <!-- Asking Price/Phone# -->
             <div class="mb-3">
-                <label for="price" class="form-label">Asking Price/Phone#</label>
+                <label for="price" class="form-label" data-i18n="basic.price">Asking Price/Phone</label>
                 <input type="text" class="form-control input-field-info" id="price"
                     placeholder="Enter the asking price or phone number" />
             </div>
 
             <!-- Trade-in Value -->
             <div class="mb-3">
-                <label for="trade-in" class="form-label">Trade-in Value</label>
+                <label for="trade-in" class="form-label" data-i18n="basic.value">Trade-in Value</label>
                 <input type="text" class="form-control " id="trade-in" placeholder="Enter the trade-in value" />
             </div>
 
             <!-- Additional Checklist Items - Body Condition -->
-            <h2>Body Condition</h2>
+            <h2 data-i18n="basic.h2body-condition">Body Condition</h2>
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="scratches" />
-                <label class="form-check-label" for="scratches">Scratches</label>
+                <label class="form-check-label" for="scratches" data-i18n="basic.scratches">Scratches</label>
                 <input type="text" class="form-control input-field" id="scratches-details"
                     placeholder="Enter details" />
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="dents" />
-                <label class="form-check-label" for="dents">Dents</label>
+                <label class="form-check-label" for="dents" data-i18n="basic.dents">Dents</label>
                 <input type="text" class="form-control input-field" id="dents-details" placeholder="Enter details" />
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="windshield" />
-                <label class="form-check-label" for="windshield">Windshield (chips or cracks?)</label>
+                <label class="form-check-label" for="windshield" data-i18n="basic.windshield">Windshield (chips or cracks?)</label>
                 <input type="text" class="form-control input-field" id="windshield-details"
                     placeholder="Enter details" />
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="headlights" />
-                <label class="form-check-label" for="headlights">Headlights (foggy?)</label>
+                <label class="form-check-label" for="headlights" data-i18n="basic.headlights">Headlights (foggy?)</label>
                 <input type="text" class="form-control input-field" id="headlights-details"
                     placeholder="Enter details" />
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="inspection-sticker" />
-                <label class="form-check-label" for="inspection-sticker">Inspection Sticker Current?</label>
+                <label class="form-check-label" for="inspection-sticker" data-i18n="basic.inspection-sticker">Inspection Sticker Current?</label>
                 <input type="text" class="form-control input-field" id="inspection-sticker-details"
                     placeholder="Enter details" />
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="rusty-brake-rotors" />
-                <label class="form-check-label" for="rusty-brake-rotors">Rusty Brake Rotors?</label>
+                <label class="form-check-label" for="rusty-brake-rotors" data-i18n="basic.rusty-brake-rotors">Rusty Brake Rotors?</label>
                 <input type="text" class="form-control input-field" id="rusty-brake-rotors-details"
                     placeholder="Enter details" />
             </div>
 
             <!-- Additional Checklist Items - Wheels -->
-            <h2>Wheels</h2>
+            <h2 data-i18n="basic.h2wheels">Wheels</h2>
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="tire-tread" />
-                <label class="form-check-label" for="tire-tread">Tire Tread</label>
+                <label class="form-check-label" for="tire-tread" data-i18n="basic.tire-tread">Tire Tread</label>
                 <input type="text" class="form-control input-field" id="tire-tread-details"
                     placeholder="Enter details" />
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="all-tires-same" />
-                <label class="form-check-label" for="all-tires-same">All 4 tires/wheels the same?</label>
+                <label class="form-check-label" for="all-tires-same" data-i18n="basic.all-tires-same">All 4 tires/wheels the same?</label>
                 <input type="text" class="form-control input-field" id="all-tires-same-details"
                     placeholder="Enter details" />
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="wheel-damage" />
-                <label class="form-check-label" for="wheel-damage">Wheel damage?</label>
+                <label class="form-check-label" for="wheel-damage" data-i18n="basic.wheel-damage">Wheel damage?</label>
                 <input type="text" class="form-control input-field" id="wheel-damage-details"
                     placeholder="Enter details" />
             </div>
 
             <!-- Additional Checklist Items - Interior -->
-            <h2>Interior</h2>
+            <h2 data-i18n="basic.h2interior">Interior</h2>
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="rips-on-seats" />
-                <label class="form-check-label" for="rips-on-seats">Rips on seats</label>
+                <label class="form-check-label" for="rips-on-seats" data-i18n="basic.rips-on-seats">Rips on seats</label>
                 <input type="text" class="form-control input-field" id="rips-on-seats-details"
                     placeholder="Enter details" />
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="car-options" />
-                <label class="form-check-label" for="car-options">Car Options (Navi, sunroof, etc)</label>
+                <label class="form-check-label" for="car-options" data-i18n="basic.car-options">Car Options (Navi, sunroof, etc)</label>
                 <input type="text" class="form-control input-field" id="car-options-details"
                     placeholder="Enter details" />
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="headliner" />
-                <label class="form-check-label" for="headliner">Headliner (saggy?)</label>
+                <label class="form-check-label" for="headliner" data-i18n="basic.headliner">Headliner (saggy?)</label>
                 <input type="text" class="form-control input-field" id="headliner-details"
                     placeholder="Enter details" />
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="transmission" />
-                <label class="form-check-label" for="transmission">Automatic/Manual</label>
+                <label class="form-check-label" for="transmission" data-i18n="basic.transmission">Automatic/Manual</label>
                 <input type="text" class="form-control input-field" id="transmission-details"
                     placeholder="Enter details" />
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="steering-wheel" />
-                <label class="form-check-label" for="steering-wheel">Steering wheel (worn?)</label>
+                <label class="form-check-label" for="steering-wheel" data-i18n="basic.steering-wheel">Steering wheel (worn?)</label>
                 <input type="text" class="form-control input-field" id="steering-wheel-details"
                     placeholder="Enter details" />
             </div>
 
 
             <!-- Additional Checklist Items - Under the Car -->
-            <h2>Under the Car</h2>
+            <h2 data-i18n="basic.h2under-car">Under the Car</h2>
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="engine-leaks" />
-                <label class="form-check-label" for="engine-leaks">Leaks (near engine and rear diff)</label>
+                <label class="form-check-label" for="engine-leaks" data-i18n="basic.leaks">Leaks (near engine and rear diff)</label>
                 <input type="text" class="form-control input-field" id="engine-leaks-input"
                     placeholder="Enter details" />
 
@@ -185,13 +198,13 @@
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="rust" />
-                <label class="form-check-label" for="rust">Rust (exhaust, frame, body, etc)</label>
+                <label class="form-check-label" for="rust" data-i18n="basic.rust">Rust (exhaust, frame, body, etc)</label>
                 <input type="text" class="form-control input-field" id="rust-input" placeholder="Enter details" />
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="suspension" />
-                <label class="form-check-label" for="suspension">Suspension (tie rods, ball joints, shocks, axle,
+                <label class="form-check-label" for="suspension" data-i18n="basic.suspension">Suspension (tie rods, ball joints, shocks, axle,
                     etc)</label>
                 <input type="text" class="form-control input-field" id="suspension-input" placeholder="Enter details" />
 
@@ -199,17 +212,17 @@
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="frame-damage" />
-                <label class="form-check-label" for="frame-damage">Frame Damage (from collision)</label>
+                <label class="form-check-label" for="frame-damage" data-i18n="basic.frame-damage">Frame Damage (from collision)</label>
                 <input type="text" class="form-control input-field" id="rame-damage-input"
                     placeholder="Enter details" />
             </div>
 
             <div class="review-section">
-                <h3>Checklist information review:</h3>
+                <h3 data-i18n="basic.h3review">Checklist information review:</h3>
                 <div class="car-info"></div>
-                <div>How many items did you check: <span id="checked-count">0/18</span></div>
+                <div><div data-i18n="basic.check">How many items did you check:</div><span id="checked-count">0/18</span></div>
 
-                <p>Comments you added:</p>
+                <p data-i18n="basic.comments">Comments you added:</p>
                 <div class="review-text"></div>
             </div>
 
@@ -220,11 +233,7 @@
             <button type="button" class="btn btn-primary" id="exportPdfButton">Export to PDF</button>
         </div>
     </section>
-    <script>
-        $(document).ready(function () {
-            $("#navbar").load("/pages/navi.html");
-        });
-    </script>
+
 
     <script src="/js/basic.js"></script>
 
@@ -232,8 +241,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
+    <script src="/js/i18n.js"></script>
 
 
 </body>
