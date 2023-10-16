@@ -25,8 +25,7 @@ $(function () {
     .init({
       debug: false,
       fallbackLng: 'en',
-      supportedLngs: ['en','de'],
-      nonExplicitSupportedLngs: true,
+      load: 'all',
       backend: {
         loadPath: '/locales/{{lng}}/{{ns}}.json'
       }
