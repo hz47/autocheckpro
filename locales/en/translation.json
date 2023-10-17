@@ -16,6 +16,16 @@
     "p2": "They've worked like a charm for me, and I hope they do the same for you!",
     "p3": "Any feedback that could be useful for others? Feel free to share it with me here. 🚗😄"
   },
+  "test-drive": {
+    "h2owner": "Questions for the Owner",
+    "ownership-duration": "1. How long have you owned the car?",
+    "reason-for-selling": "2. Why are you selling it?",
+    "car-condition": "3. Does everything work/any problems?",
+    "service-records": "4. Any service records, what have you done since owning the car?",
+    "car-usage": "5. What did you use the car for?",
+    "miles-driven": "6. How many miles did you put on it when you owned it?",
+    "next-car": "7. What car are you looking to get now? Why?"
+  },
   "basic": {
     "year": "Year",
     "make": "Make",

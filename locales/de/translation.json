@@ -16,6 +16,16 @@
     "p2": "Sie haben bei mir wunderbar funktioniert, und ich hoffe, sie erweisen sich auch für dich als nützlich!",
     "p3": "Irgendwelche Rückmeldungen, die für andere nützlich sein könnten? Teile sie gerne mit mir hier. 🚗😄"
   },
+  "test-drive": {
+    "h2owner": "Fragen an den Besitzer",
+    "ownership-duration": "1. Wie lange besitzen Sie das Auto?",
+    "reason-for-selling": "2. Warum verkaufen Sie es?",
+    "car-condition": "3. Funktioniert alles/einige Probleme?",
+    "service-records": "4. Gibt es Serviceaufzeichnungen? Was wurde während Ihres Besitzes am Auto gemacht?",
+    "car-usage": "5. Wofür haben Sie das Auto genutzt?",
+    "miles-driven": "6. Wie viele Meilen sind Sie damit gefahren, während Sie es besessen haben?",
+    "next-car": "7. Welches Auto möchten Sie als Nächstes? Warum?"
+  },
   "basic": {
     "year": "Jahr",
     "make": "Hersteller",
