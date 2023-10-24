@@ -44,7 +44,21 @@
     "oil-level-oil": "Oil Level and Oil (no metal, not frothy)?",
     "oil-cap-froth": "Oil Cap (no froth under cap)?",
     "check-coolant": "Check Coolant (make sure it's not hot when you check)?",
-    "inspect-components": "Inspect Hoses, Belts, Battery Posts, Wires, etc.?"
+    "inspect-components": "Inspect Hoses, Belts, Battery Posts, Wires, etc.?",
+    "test-drive.h2-cold-startup": "Cold Startup",
+    "strange-noises-smoke": "Any Strange Noises/Smoke? (ticking, grinding, etc)",
+    "long-start": "Does It Take Too Long to Start?",
+    "motor-movement": "Does the Motor Move a Lot (Bad Motor Mounts)?",
+    "oil-cap-pulses-smoke": "Check Under Oil Cap (Strong Pulses/Smoke)?",
+    "idle-smooth-out": "Idle (does the idle drop and smooth out)?",
+    "exhaust-smoke": "Check Exhaust for Smoke Upon Startup?",
+    "warm-startup": "Warm Startup",
+    "strange-noises-smoke-warm": "Any Strange Noises/Smoke? (ticking, grinding, etc)",
+    "long-start-warm": "Does It Take Too Long to Start?",
+    "oil-cap-pulses-smoke-froth-warm": "Check Under Oil Cap (Strong Pulses/Smoke/Froth)?",
+    "idle-smooth-out-warm": "Idle (does the idle drop and smoothout)?",
+    "radiator-reservoir-bubbling": "Bubbling in Radiator Reservoir? (Blown Head Gasket)",
+    "exhaust-smoke-warm": "Check Exhaust for Smoke Upon Startup?"
   },
   "basic": {
     "year": "Year",

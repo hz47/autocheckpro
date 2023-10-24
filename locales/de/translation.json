@@ -44,7 +44,21 @@
     "oil-level-oil": "Ölstand und Öl (kein Metall, nicht schaumig)?",
     "oil-cap-froth": "Öldeckel (kein Schaum unter dem Deckel)?",
     "check-coolant": "Kühlmittel prüfen (stellen Sie sicher, dass es nicht heiß ist, wenn Sie prüfen)?",
-    "inspect-components": "Inspektion von Schläuchen, Riemen, Batterieanschlüssen, Drähten, usw.?"
+    "inspect-components": "Inspektion von Schläuchen, Riemen, Batterieanschlüssen, Drähten, usw.?",
+    "test-drive.h2-cold-startup": "Kalter Start",
+    "strange-noises-smoke": "Irgendwelche seltsamen Geräusche/Rauch? (Ticken, Mahlen, etc.)",
+    "long-start": "Dauert es zu lange, um zu starten?",
+    "motor-movement": "Bewegt sich der Motor viel (Schlechte Motorlager)?",
+    "oil-cap-pulses-smoke": "Untersuchen Sie unter dem Öldeckel (Starke Impulse/Rauch)?",
+    "idle-smooth-out": "Leerlauf (fällt der Leerlauf ab und glättet sich aus)?",
+    "exhaust-smoke": "Überprüfen Sie den Auspuff auf Rauch beim Starten?",
+    "warm-startup": "Warmer Start",
+    "strange-noises-smoke-warm": "Irgendwelche seltsamen Geräusche/Rauch? (Ticken, Mahlen, etc.)",
+    "long-start-warm": "Dauert es zu lange, um zu starten?",
+    "oil-cap-pulses-smoke-froth-warm": "Untersuchen Sie unter dem Öldeckel (Starke Impulse/Rauch/Schaum)?",
+    "idle-smooth-out-warm": "Leerlauf (fällt der Leerlauf ab und glättet sich aus)?",
+    "radiator-reservoir-bubbling": "Blubbern im Kühlmittelbehälter? (Geplatzte Zylinderkopfdichtung)",
+    "exhaust-smoke-warm": "Überprüfen Sie den Auspuff auf Rauch beim Starten?"
   },
   "basic": {
     "year": "Jahr",
