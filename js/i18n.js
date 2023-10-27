@@ -30,42 +30,6 @@ $(function () {
         backend: {
           loadPath: "/locales/{{lng}}/{{ns}}.json",
         },
-        // resources: {
-        //   en: {
-        //     translation: {
-        //       head: {
-        //         title: 'My Awesome Landing-Page',
-        //         description: 'The description of this awesome landing page.'
-        //       },
-        //       intro: {
-        //         title: 'Landing Page',
-        //         subTitle: 'Some subtitle'
-        //       },
-        //       footer: {
-        //         counter_one: 'Changed language just once',
-        //         counter_other: 'Changed language already {{count}} times',
-        //         date: 'It\'s {{date, LLLL}}'
-        //       }
-        //     }
-        //   },
-        //   de: {
-        //     translation: {
-        //       head: {
-        //         title: 'Meine grossartige Webseite',
-        //         description: 'Die Beschreibung dieser grossartigen Webseite.'
-        //       },
-        //       intro: {
-        //         title: 'Webseite',
-        //         subTitle: 'Ein Untertitel'
-        //       },
-        //       footer: {
-        //         counter_one: 'Die Sprache wurde erst ein mal gewechselt',
-        //         counter_other: 'Die Sprache wurde {{count}} mal gewechselt',
-        //         date: 'Es ist {{date, LLLL}}'
-        //       }
-        //     }
-        //   }
-        // }
       },
       (err, t) => {
         if (err) return console.error(err);
@@ -125,6 +89,15 @@ $(function () {
         $(".language-flag").on("click", function () {
           // Get the language from the data-lang attribute
           var newLanguage = $(this).data("lang");
+
+          //add hreflang tags dynamically to the <head> section
+          console.log("website lang", newLanguage)
+          $('html').attr('lang', newLanguage);
+          //add to navi
+          $('.nav-link').each(function() {    
+            // Check if the language matches the selected language
+                $(this).attr('hreflang', newLanguage);
+        });
 
           // Update the language switcher
           i18next.changeLanguage(newLanguage, () => {

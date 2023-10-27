@@ -3,7 +3,7 @@
     "title": "HOME"
   },
   "index": {
-    "title": "In unserer Website wird noch gewerkelt, aber wir versprechen, es wird die Wartezeit wert sein! 🚧💻",
+    "title": "Autokauf-Tipps und Checklisten",
     "subTitle": "Willkommen bei 01 Car Hub, wo du Checklisten findest, die dich mit Wissen versorgen und dir helfen, informierte Entscheidungen über deinen nächsten Autokauf zu treffen.",
     "btn": {
       "basic": "Basis-Checkliste",
@@ -12,9 +12,9 @@
   },
   "about": {
     "hi": "Hallo!",
-    "p1": "Ich habe diese Checklisten zusammengestellt, um den Autokauf viel einfacher zu gestalten.",
-    "p2": "Sie haben bei mir wunderbar funktioniert, und ich hoffe, sie erweisen sich auch für dich als nützlich!",
-    "p3": "Irgendwelche Rückmeldungen, die für andere nützlich sein könnten? Teile sie gerne mit mir hier. 🚗😄"
+    "p1": "Wir haben umfassende Checklisten zusammengestellt, um Ihnen bei informierteren Entscheidungen beim Autokauf zu helfen.",
+    "p2": "Sie haben für uns wunderbar funktioniert, und ich hoffe, sie werden auch für Sie! 🚗😄",
+    "p3": "Haben Sie Feedback oder Vorschläge, die Sie mit uns teilen möchten? Wir würden uns freuen, von Ihnen zu hören! Treten Sie mit uns in den sozialen Medien in Kontakt:"
   },
   "test-drive": {
     "h2owner": "Fragen an den Besitzer",

@@ -3,7 +3,7 @@
     "title": "HOME"
   },
   "index": {
-    "title": "Our website is under construction, but we promise it's going to be worth the wait! 🚧💻",
+    "title": "Car Buying Tips and Checklists",
     "subTitle": "Welcome to 01 Car Hub, where you'll find checklists to empower you with knowledge and help you make informed decisions about your next car purchase.",
     "btn": {
       "basic": "Basic Checklist",
@@ -12,9 +12,9 @@
   },
   "about": {
     "hi": "Hey there!",
-    "p1": "I've put together these checklists to make car buying a whole lot easier.",
-    "p2": "They've worked like a charm for me, and I hope they do the same for you!",
-    "p3": "Any feedback that could be useful for others? Feel free to share it with me here. 🚗😄"
+    "p1": "We've put together comprehensive checklists to help you make more informed decisions when purchasing a car.",
+    "p2": "They've worked like a charm for us, and I hope they do the same for you!🚗😄",
+    "p3": "Do you have feedback or suggestions to share with us? We'd love to hear from you! Connect with us on social media:"
   },
   "test-drive": {
     "h2owner": "Questions for the Owner",
